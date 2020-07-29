@@ -4,3 +4,9 @@ Customer user needs to login to access Knowledge
 Customer user create cases when needed
 Customer user track and comment on open cases.
 See history of cases
+Internal user needs to be able to find products and pricebooks to offer
+Internal user needs to be able to notified when a package is past its delivery date and missing
+Internal users need to approve insurance payouts and discounts on products
+Customers need to be able to pick type of shipping
+Customers need to be able to get insurance on their mail
+Customers need to be able to get information on available products
