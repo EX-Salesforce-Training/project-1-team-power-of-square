@@ -7,3 +7,54 @@ Community Leader: Sal
 Salesforce Admin: Dani
 Project Manager: Jon
 Flex Player: Josh
+
+Big Business Postal Service
+
+We make deals with large companies to mass ship product or
+ship and send packages for people within the company.
+
+Mass Shipments go to a specific address and we sell subscriptions
+to companies for 1,000,000 a month. If a company is thinking about purchasing
+a subscription to our service can be counted as an opportunity.
+
+If a company gets out subscription they have access to a certain amount of 
+mass shipments per month along with accounts for individuals within the company
+to join our community to get updates with our business. Those individuals can request
+drone shipping for personal smaller items.
+
+We also offer insurance on sending mail, with our subscription you get the basic
+insurance. With spending more money your company can get our platinum insurance
+that gives a much larger payout.
+
+For our drones there are 2 models. Our Sonic Drones are smaller faster drones that can carry a couple
+packages at a time to a specific location. Our other model is our Big Drone which carries up to
+20 packages in separate compartments that goes on specific routes around town.
+
+Drones aren't perfect. We haven't found the technology to safely place packages on the ground.
+So we offer different padding for our packages ranging from bubble wrap to memory foam to make
+those package drops much safer.
+
+Data Model: 
+
+Accounts Object - Our Business Partners
+Contacts Object - Individuals within our business partners
+Drones Custom Object- Two record types for Sonic Drones and Big Drones
+Package Custom Object- Needs Delivery Status, Tracking Number, Customer and Account relationship, Recipient Info
+Products - Package wrapper, Pens, packaging
+Services - Shipping type, insurance type
+Leads - Businesses interested in our subscription
+Opportunities - Businesses in the process of deciding to get our subscription
+Cases - still need to decide how to implement
+
+Security and Access:
+
+Employees - Customer Support, Sales, Drone Expert, Mass Shipment Driver
+End Users - Full Business Profiles, Individual Conact Profiles
+
+Process Automation Implementation:
+
+Approval Process: Insurance Payouts, Discount for Pricebook
+Workflows: New Outbound Message for package is near-by, email internal users when an opportunity is closed
+Flows: Guide end users in registering mail with-in our system, Guide end users to create community account
+Process Builder: Updates delivery status to missing and creates a case if mail is past due.
+
