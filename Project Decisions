@@ -1,6 +1,6 @@
 These are the decisions made in each meeting
 ////////////////////////////////////////////////////
-
+"Gathering Requirements
 07/29/2020
 
 Roles for p1
@@ -58,6 +58,21 @@ Approval Process: Insurance Payouts, Discount for Pricebook
 Workflows: New Outbound Message for package is near-by, email internal users when an opportunity is closed
 Flows: Guide end users in registering mail with-in our system, Guide end users to create community account
 Process Builder: Updates delivery status to missing and creates a case if mail is past due.
-///////////////////////////////////////////////////////////////////
 
-07/30/2020
+///////////////////////////////////////////////////////////////////
+"Analysis and Design"
+07/31/2020
+
+We talked about what we want our community to feel like and see our options.
+We want to have our big business clients to have a page for their whole company and each employee
+can have their own account thats connected to only that business and only see applicable data.
+We also want the ability to share updates with our own business and share opportunities to all
+accounts. We also want to have knowledge topics to answer frequently asked questions and allow
+comments so people in the community can help each other.
+
+We also want our visualforce page to include components to show the required information from the
+core requirements in the project guidelines. We also want to let end users create mail records
+through our community, we just have to see if we can implement a flow to our community page or if we
+should customize a wizard for the option.
+
+/////////////////////////////////////////////////////////////////////////////////////
