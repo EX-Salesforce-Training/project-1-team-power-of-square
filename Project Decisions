@@ -79,3 +79,36 @@ Started our first sprint with a 45 min meeting to delegate tasks and plan the re
 of the sprint. Sprints will be in 3 days period.
 
 //////////////////////////////////////////////////////////////////////////////////////
+"Interval Review and Retrospective"
+08/02/2020
+
+For the interval review Danielle showed everyone the custom objects she created in her SalesForce
+Org and the Schema she generated. Jonathan showed everyone the products and different pricebooks that
+he created. Sal showed everyone the Community that was initilized and talked about the research he
+has done for the project. Joshua talked about his research and plans to implement VisualForce 
+components into the community.
+
+For the end of interval retrospective we talked about what went well, researching and
+planning seemed to go fine however, the thing that we need to work on for the next interval
+is time management because it was stressful at first juggling all of our work. We decided
+a course of action is to increase communication and help wherever needed.
+
+/////////////////////////////////////////////////////////////////////////////////
+"Start of Sprint Meeting"
+08/03/2020
+
+We started this meeting off talking about how we want the end presentation to look.
+That way we can better decide on how we want to continue our work. We talked about the next 
+few intervals and what we can accomplish in each one. Since the first interval was mainly planning
+and prep work this second interval will be all about completing solo work. That solo work includes:
+
+Danielle: ServiceCloud implementation
+Jonathan: SalesCloud implementation and Process Automation
+Joshua: VisualForce Components and Apex Controllers
+Sal: Lightning Knowldege Articles and branching topics
+
+We decided our community is going to be used to inform our end users of business events
+and also FAQ. We will allow our customers to comment on specific threads to provide help others
+in the community who are struggling with a specifc business processes. We're also going to
+create mock data to perform tests on in each org. That mock data will consist of fake businesses,
+employees of those businesses, packages for those businesses, and internal users of the org.
