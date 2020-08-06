@@ -1,0 +1,32 @@
+<!--
+  Visualforce second page for users to find and edit account information
+  and tracking numbers
+  Created on: 08/03/2020
+  Last modified: 08/05/2020 by Josh Lewis
+-->
+<apex:page controller="AccountsAndTrackingController">
+    <apex:form >
+    	<apex:pageBlock >
+            <apex:outputText value="Double click on a field to edit."/><br/><br/>
+            <apex:outputLabel value="Name: "/>
+            <apex:outputField value="{!searchResult.name}"/><br/>
+            <apex:outputLabel value="Phone: "/>
+            <apex:outputField value="{!searchResult.phone}"/><br/>
+            <apex:outputLabel value="Business Email: "/>
+            <apex:outputField value="{!searchResult.business_email__c}"/><br/>
+            <apex:outputLabel value="Shipping Street: "/>
+            <apex:outputField value="{!searchResult.shippingstreet}"/>
+            <apex:outputLabel value="Shipping City: "/>
+            <apex:outputField value="{!searchResult.shippingcity}"/><br/>
+            <apex:outputLabel value="Shipping State: "/>
+            <apex:outputField value="{!searchResult.shippingstate}"/>
+            <apex:outputLabel value="Shipping Postal/Zip Code: "/>
+            <apex:outputField value="{!searchResult.shippingpostalcode}"/><br/>
+            <apex:outputLabel value="Shipping Country: "/>
+            <apex:outputField value="{!searchResult.shippingcountry}"/>
+            <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" event="ondblclick" changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+            <apex:commandButton action="{!save}" id="saveButton" value="Save"/>
+            <apex:commandButton action="{!cancel}" id="cancelButton" value="Cancel"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,36 @@
+// Controller for Visualforce page for users to find and edit account information
+// and tracking numbers
+// Created on: 08/03/2020
+// Last Modified: 08/05/2020 by Josh Lewis
+public with sharing class AccountsAndTrackingController {
+    // searchTerm variable gets user input and searchResult returns a database query
+    public String searchTerm {get;set;}
+    public Account searchResult {get;set;}
+
+    public AccountsAndTrackingController() {
+        // not sure what to put here yet
+    }
+
+    // Searches for accounts based on the business_email the user provides
+    public pagereference search() {
+        String qry = 'SELECT name, business_email__c, phone, ShippingStreet, ShippingCity, ShippingState, ShippingPostalCode, ShippingCountry FROM Account WHERE business_email__c = ' + '\'' + searchTerm + '\'';
+        searchResult = database.query(qry);
+        return page.AccountsAndTracking2;
+    }
+
+    // Cancels the search/edit, bringing us back to the first page of the wizard
+    public pagereference cancel(){
+        return page.AccountsAndTracking1;
+    }
+
+    // Saves any inline edits to the account that the user makes
+    public void save() {
+        update searchResult;
+    }
+
+    /*public pagereference edit() {
+        PageReference editPage = new ApexPages.StandardController(searchResult).edit();
+        editPage.setRedirect(true);
+		return editPage;
+    }*/
+}
